@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bot Finanzas - Gastos Personales</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        h1 { color: #14B8A6; }
+        h2 { color: #0D9488; margin-top: 2em; }
+        a { color: #0D9488; }
+        .footer {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bot Finanzas - Gastos Personales</h1>
+    
+    <h2>¿Qué hace esta aplicación?</h2>
+    <p>Esta es una aplicación personal de finanzas que permite a su propietario (un único usuario) registrar y consultar sus gastos e ingresos personales a través de un bot de Telegram. La aplicación lee correos electrónicos del banco del usuario para registrar automáticamente los movimientos financieros, y guarda toda la información en una hoja de cálculo privada de Google Sheets.</p>
+    
+    <h2>¿Cómo funciona?</h2>
+    <ul>
+        <li>El usuario autoriza el acceso de solo lectura a su cuenta de Gmail.</li>
+        <li>La aplicación lee únicamente los correos etiquetados específicamente para este fin (etiqueta "BancolombiaBot").</li>
+        <li>Los datos extraídos se guardan en una hoja de cálculo privada a la que solo el usuario tiene acceso.</li>
+        <li>El usuario interactúa con el bot a través de Telegram para consultar y editar sus finanzas.</li>
+    </ul>
+    
+    <h2>Política de Privacidad</h2>
+    <p><strong>Última actualización:</strong> 12 de octubre de 2026</p>
+    
+    <h3>Datos que recopilamos</h3>
+    <p>Esta aplicación accede únicamente a los correos electrónicos de tu cuenta de Gmail que tengan la etiqueta "BancolombiaBot". No accede a ningún otro correo ni a otra parte de tu cuenta de Google.</p>
+    
+    <h3>Cómo usamos los datos</h3>
+    <p>Los datos extraídos de los correos (monto, fecha, comercio) se utilizan exclusivamente para registrar automáticamente tus movimientos financieros en tu hoja de cálculo privada de Google Sheets. No se comparten con terceros.</p>
+    
+    <h3>Almacenamiento de datos</h3>
+    <p>Todos los datos financieros se almacenan únicamente en tu hoja de cálculo privada de Google Sheets. Los tokens de acceso a Gmail se almacenan de forma segura en Cloudflare Workers (el entorno de ejecución de la aplicación).</p>
+    
+    <h3>Compartir datos</h3>
+    <p>No compartimos, vendemos ni transferimos tus datos a terceros. La aplicación es de uso estrictamente personal (un solo usuario).</p>
+    
+    <h3>Seguridad</h3>
+    <p>La aplicación utiliza OAuth 2.0 de Google para autenticarse. Nunca almacenamos tu contraseña de Google. Puedes revocar el acceso de la aplicación en cualquier momento desde tu cuenta de Google (Seguridad → Aplicaciones de terceros).</p>
+    
+    <h3>Contacto</h3>
+    <p>Para cualquier consulta sobre privacidad, puedes contactar al desarrollador a través de GitHub: <a href="https://github.com/brayandiazgo">brayandiazgo</a></p>
+    
+    <div class="footer">
+        <p>Esta aplicación es de uso personal y no está destinada a distribución pública.</p>
+    </div>
+</body>
+</html>
